@@ -1,9 +1,12 @@
-'''Write a program for sequential search'''
-a=[1,2,3,4,5,6,7,8,9]
-b=int(input("Enter the number to be searched:"))
-for i in range(0,len(a)):
-    if b==a[i]:
-        print("The number was found")
-        break
+def sequential_search(arr, key):
+    for i in range(len(arr)):
+        if arr[i] == key:
+            return i
+    return -1
+arr = [10, 20, 30, 40, 50]
+key = 30
+result = sequential_search(arr, key)
+if result != -1:
+    print("Element found at index", result)
 else:
-    print("The number was not found")
+    print("Element not found")
