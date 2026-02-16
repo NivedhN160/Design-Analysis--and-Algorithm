@@ -13,7 +13,7 @@ def travelling_salesman(graph, start):
     return min_cost
 graph = [
     [0, 10, 15, 20],
-    [10,45, 35, 25],
+    [10,4, 35, 25],
     [15, 35, 0, 30],
     [20, 25, 30, 0]
 ]
